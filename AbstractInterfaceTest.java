@@ -46,12 +46,6 @@ public class AbstractInterfaceTest {
 			print(life); // Dynamic binding or late binding. The type of object life is resolved at execution time. 
 		}
 		
-		
-
-
-		
-		
-		
 		System.out.println("Program ran.");
 	}
 	
