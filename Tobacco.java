@@ -1,5 +1,7 @@
 /**
- * Tobacco is class that implements Life and Danger interfaces
+ * Tobacco is class that implements Life and Danger interfaces. 
+ * When there are two default methods with the same name in two different interfaces, at least one has to be overwritten to avoid confusion. 
+ * For example, Life and Danger both has a default method message(). Usually, default methods do not need to be overwritten, but in this case, compiler will be confused. 
  * Tobacco like Nicotiana sp. is dangerous
  * @author Rajesh
  *
@@ -38,11 +40,18 @@ public class Tobacco implements Life, Danger {
 	
 	@Override
 	public String toString() {
-		return String.format("%s: %s %n%s: %s %n%s: %s %n%s: %s %n%s: %s",
+		return String.format("%s: %s %n%s: %s %n%s: %s %n%s: %s %n%s: %s %n%s: %s",
 								"Name", getName(),
 								"Respire", respiration(),
 								"Reproduce", reproduce(),
 								"Harmful", harmful(),
-								"Addiction", addiction());
+								"Addiction", addiction(),
+								"Message", message());
+		
+	}
+
+	@Override
+	public String message() {
+		return Life.super.message();
 	}
 }
