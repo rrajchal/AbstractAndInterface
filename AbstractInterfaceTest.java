@@ -1,4 +1,3 @@
-
 /**
  * This class tests Abstract and Interface classes in a Polymorphic manner 
  * Polymorphism: IS-A relation - A parent (base, or super) class reference is used to refer child (subclass)
